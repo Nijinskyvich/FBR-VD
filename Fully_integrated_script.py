@@ -22,24 +22,24 @@ import numpy as np
 
 # Define key parameters. All length parameters / coordinates in mm.
 RHS_Upr_OB_pickup = [528.53,368]; #RHS Upper OB pickup point
-UBJ_x_coord = 9.58 # LBJ x coordinate. This does not affect the roll/bump calculations. It is only for calculating caster angle
+UBJ_x_coord = 10 # LBJ x coordinate. This does not affect the roll/bump calculations. It is only for calculating caster angle
 RHS_Lwr_OB_pickup = [564.85,140]; #RHS Lower OB pickup point
-LBJ_x_coord = -9.23 # LBJ x coordinate. This does not affect the roll/bump calculations. It is only for calculating caster angle
+LBJ_x_coord = -10 # LBJ x coordinate. This does not affect the roll/bump calculations. It is only for calculating caster angle
 LHS_Upr_OB_pickup = [-RHS_Upr_OB_pickup[0],RHS_Upr_OB_pickup[1]]; #LHS Upper OB pickup point
 LHS_Lwr_OB_pickup = [-RHS_Lwr_OB_pickup[0],RHS_Lwr_OB_pickup[1]]; #LHS Lower OB pickup point
 static_camber = -1.5; #In degrees
 UWB_length = 223.442565; #Upper wishbone length in front view
 LWB_length = 356.1342096; #Lower wishbone length in front view
-UWB_angle = 10.02518383; #Upper wishbone angle to horizontal. Anti-clockwise positive
-LWB_angle = 2.00398074; #Lower wishbone angle to horizontal. Anti-clockwise positive
+UWB_angle = 10.02595339; #Upper wishbone angle to horizontal. Anti-clockwise positive
+LWB_angle = 2.0112461; #Lower wishbone angle to horizontal. Anti-clockwise positive
 RHS_Upr_IB_pickup = [0, 0]; #RHS Upper IB pickup point
 RHS_Lwr_IB_pickup = [0, 0]; #RHS Lower IB pickup point
 LHS_Upr_IB_pickup = [0,0]; #Create empty coordinate set for LHS Upr IB pickup point.
 LHS_Lwr_IB_pickup = [0,0]; #Create empty coordinate set for LHS Lwr IB pickup point.
-Track = 1200; #Total track width
-Damper_IB = [189.7,569.3];
-Damper_OB = [494.2,157.5];
-Sprung_COG = [0,248.2]; #Static sprung mass COG. This will move as the car rolls in the simulation.
+Track = 1210.6; #Total track width
+Damper_IB = [188.86,568.76];
+Damper_OB = [564.85,140];
+Sprung_COG = [0,260]; #Static sprung mass COG. This will move as the car rolls in the simulation.
 Roll_centre = [0,0] #This will not be used at the given value, but will be calculated later.
 Roll_step = 0.001; #Add a small amount of roll with each iteration. DON'T CHANGE THIS
 RHS_scrub_rad = 0; # This will be calculated later so the value is largely irrelevant.

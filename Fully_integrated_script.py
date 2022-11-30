@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt; # Import matplotlib for plotting graphs
 import matplotlib.patches as mpatches;
 import numpy as np
 
-# Define key parameters. All length parameters / coordinates in mm.
+# Define key parameters. All length parameters / coordinatqes in mm.
 RHS_Upr_OB_pickup = [528.53,368]; #RHS Upper OB pickup point
 UBJ_x_coord = 10 # LBJ x coordinate. This does not affect the roll/bump calculations. It is only for calculating caster angle
 RHS_Lwr_OB_pickup = [564.85,140]; #RHS Lower OB pickup point
@@ -36,7 +36,7 @@ RHS_Upr_IB_pickup = [0, 0]; #RHS Upper IB pickup point
 RHS_Lwr_IB_pickup = [0, 0]; #RHS Lower IB pickup point
 LHS_Upr_IB_pickup = [0,0]; #Create empty coordinate set for LHS Upr IB pickup point.
 LHS_Lwr_IB_pickup = [0,0]; #Create empty coordinate set for LHS Lwr IB pickup point.
-Track = 1210.6; #Total track width
+Track = 1200; #Total track width
 Damper_IB = [188.86,568.76];
 Damper_OB = [564.85,140];
 Sprung_COG = [0,260]; #Static sprung mass COG. This will move as the car rolls in the simulation.
